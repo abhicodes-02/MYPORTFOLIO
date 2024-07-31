@@ -1,0 +1,228 @@
+<html>
+    <head><title>My Portfolio</title>
+        <style>
+            body{
+                background-color: black;
+                color:white;
+                height:100vh;
+                display:flex;
+                flex-direction: column;
+            }
+            nav{
+                display:flex;
+                align-items: center;
+                justify-content:space-evenly;
+                padding: 40px;
+                background-color: rgb(32, 29, 29);
+            }
+            li{
+                list-style:none;
+                font-family: Roboto;
+                font-size: 20px;
+                padding:10px 10px;
+                display:inline-block;
+                font-weight:bold;
+            }
+            a{
+                text-decoration: none;
+                color:white;
+            }
+            a:hover{
+                color:rgb(218, 105, 105);
+                transition: 0.2s;
+            }
+            .active{
+                color:rgb(218, 105, 105);
+            }
+            .logo{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size:30px;
+            }
+            span{
+                color:red;
+            }
+            .mid{
+                display: flex;
+                justify-content:space-evenly;
+                background-color: rgba(255, 255, 255, 0.126);
+                box-shadow: 0 0 20px 10px rgb(235, 100, 100);
+            }
+            .hello{
+                font-family:'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size:70px;
+                background-clip:text;
+                color:transparent;
+                background-image:linear-gradient(90deg,white,red ,aqua);
+            }
+            .image{
+                width:410px;
+                height:530px;
+                border-radius: 5px;
+            }
+            .smid{
+                display:flex;
+                justify-content: center;
+                justify-content: space-evenly;
+                text-align: center;
+            }
+            .edu{
+                background-image: url("education.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding: 130px 180px;
+                position:relative;
+                isolation: isolate;
+            }
+            .edu::after{
+                content:"";
+                position:absolute;
+                background:black;
+                inset:0;
+                z-index:-1;
+                opacity:0.6;
+            }
+            .achi{
+                background-image: url("achievements.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding: 130px 100px;
+                position:relative;
+                isolation: isolate;
+            }
+            .achi::after{
+                content:"";
+                position:absolute;
+                background:black;
+                inset:0;
+                z-index:-1;
+                opacity:0.6;
+            }
+            button{
+                color:white;
+                background:transparent;
+                padding:20px 30px 20px 30px;
+                border-radius: 30px;
+                font-size:15px;
+                box-shadow: 0 0 20px 10px rgb(235, 100, 100);
+                font-weight: bold;
+            }
+            button:hover{
+                color:black;
+                font-weight: bold;
+                background:rgb(218, 105, 105);
+                box-shadow: 0 0 20px 10px rgb(255, 255, 255);
+                transition: 0.2s;
+                padding:20px 30px 20px 30px;
+                border-radius: 30px;
+                font-size:15px;
+            }
+            .aboutme{
+                text-align: center;
+            }
+            .aboutmeheading{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 65px;
+                background-clip:text;
+                color:transparent;
+                background-image:linear-gradient(45deg,rgb(244, 0, 0) ,white);
+            }
+            .aboutmeparagraph{
+                font-size: 27px;
+                font-family: Cambria;
+            }
+            .resume{
+                text-align:center;
+            }
+            .resumeheading{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 65px;
+                background-clip:text;
+                color:transparent;
+                background-image:linear-gradient(45deg,rgb(244, 0, 0) ,white);
+
+            }
+            footer{
+                margin-top:auto;
+            }
+            .cont
+            {
+                font-family:'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size:50px;
+                padding:17px 10px;
+                background-clip:text;
+                color:transparent;
+                background-image:linear-gradient(180deg,red ,white);
+            }
+            .foot{
+                width:100%;
+                bottom:0;
+                background: linear-gradient(45deg,rgb(78, 77, 77),rgb(46, 46, 46),rgb(60, 48, 48));
+                color:rgb(239, 233, 233);
+                padding:30px 0 15px;
+                font-size: 12px;
+                line-height:1px;
+                text-align:center;
+                top:0;
+            }
+            .content1
+            {
+                font-size:10px;
+            }
+            .copyright{
+                display:flex;
+                justify-content:space-evenly;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h2 class="logo">ABHIMANNYU <span>CHOUDHURY</span></h2>
+            <ul>
+                <li><a class="active" href='#'>HOME</a></li>
+                <li><a href='#smidsec'>EDUCATION</a></li>
+                <li><a href='#smidsec'>ACHIEVEMENTS</a></li>
+                <li><a href='Skills.html'>SKILLS</a></li>
+                <li><a href='#fo'>CONTACT DETAILS</a></li>
+            </ul>
+        </nav><br><br><br><br><br>
+        <div class="mid">
+            <h1 class="hello">HELLO <br>EVERYONE <br>WELCOME<br> TO MY PORTFOLIO!!</h1>
+            <img class="image" src="Profilepic.jpg">
+        </div><br><br><br><br><br>
+        <div class="smid" id="smidsec">
+            <div class="edu">
+                <a href="Education.html"><button>See All</button></a>
+            </div>
+            <div class="achi">
+                <a href="#" onclick="alert('STILL IN PROGRESS')"><button>See All</button></a>
+            </div>
+        </div><br><br><br>
+        <div class="aboutme">
+            <h1 class="aboutmeheading">ABOUT ME</h1>
+            <p class="aboutmeparagraph">Hello Everyone, I am Abhimannyu Choudhury, currently residing in Kolkata, and a student at Techno India University, 
+                currently pursuing my MCA degree. I like coding and have a grasp on the languages such as Java, Python, C, etc.
+                Other than studies I love playing guitar, singing songs and dancing. I am a hardcore foody. I completed my brown stripe belt 
+                in Shotokan Karate from AIBSKA. I am sincere and hardworking and a multitasker currently looking for job/internship opportunieies 
+                to bring out my hidden talent and make myself an asset for the company.
+            </p>
+        </div><br><br><br>
+    <div class="resume">
+        <h1 class="resumeheading">HERE IS MY RESUME</h1><br>
+        <a href="ABHIMANNYU CHOUDHURY CV.pdf" download><button>CLICK HERE TO DOWNLOAD MY RESUME</button></a>
+    </div><br><br><br>
+        <footer class="foot" id="fo">
+            <h1 class="cont">CONTACT ME</h1><br>
+            <div class="content1"><h3>EMAIL : abhimannyuchoudhurywork2002@gmail.com</h3><br>
+                <h3>EMAIL 2 : progamerbaban02@gmail.com</h3><br>
+                <h3>Phone No.: 6291459513</h3><br>
+            </div><br><br>
+            <hr>
+            <div class="copyright">
+                <h2>Author: @Abhimannyu</h2>
+                <h2>&copy; 2024 . All rights Reserved</h2>
+            </div>
+        </footer>
+    </body>
+</html>

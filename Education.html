@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EDUCATION</title>
+    <style>
+        body{
+                background-color: black;
+                color:white;
+                height:100vh;
+                display:flex;
+                flex-direction: column;
+            }
+            nav{
+                display:flex;
+                align-items: center;
+                justify-content:space-evenly;
+                padding: 40px;
+                background-color: rgb(32, 29, 29);
+            }
+            li{
+                list-style:none;
+                font-family: Roboto;
+                font-size: 20px;
+                padding:10px 10px;
+                display:inline-block;
+                font-weight:bold;
+            }
+            a{
+                text-decoration: none;
+                color:white;
+            }
+            a:hover{
+                color:rgb(218, 105, 105);
+                transition: 0.2s;
+            }
+            .logo{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size:30px;
+            }
+            span{
+                color:red;
+            }
+            .mid{
+                text-align: center;
+            }
+            button{
+                color:white;
+                background:transparent;
+                padding:20px 30px 20px 30px;
+                border-radius: 30px;
+                font-size:15px;
+                box-shadow: 0 0 20px 10px rgb(235, 100, 100);
+                font-weight: bold;
+            }
+            button:hover{
+                color:black;
+                font-weight: bold;
+                background:rgb(218, 105, 105);
+                box-shadow: 0 0 20px 10px rgb(255, 255, 255);
+                transition: 0.2s;
+                padding:20px 30px 20px 30px;
+                border-radius: 30px;
+                font-size:15px;
+            }
+            footer{
+                margin-top:auto;
+            }
+            .cont
+            {
+                font-family:'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size:50px;
+                padding:17px 10px;
+                background-clip:text;
+                color:transparent;
+                background-image:linear-gradient(180deg,red ,white);
+            }
+            .foot{
+                width:100%;
+                bottom:0;
+                background: linear-gradient(45deg,rgb(78, 77, 77),rgb(46, 46, 46),rgb(60, 48, 48));
+                color:rgb(239, 233, 233);
+                padding:30px 0 15px;
+                font-size: 12px;
+                line-height:1px;
+                text-align:center;
+                top:0;
+            }
+            .content1
+            {
+                font-size:10px;
+            }
+            .copyright{
+                display:flex;
+                justify-content:space-evenly;
+            }
+            .hello{
+                font-family:'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size:70px;
+                background-clip:text;
+                color:transparent;
+                background-image:linear-gradient(90deg,white,red ,aqua);
+            }
+            .sc,.ma,.ba{
+                font-size: 40px;
+            }
+            .hi{
+                display:flex;
+                justify-content: space-evenly;
+            }
+            .active{
+                color:rgb(218, 105, 105);
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2 class="logo">ABHIMANNYU <span>CHOUDHURY</span></h2>
+        <ul>
+            <li><a href='index.html'>HOME</a></li>
+            <li><a class="active" href='Education.html'>EDUCATION</a></li>
+            <li><a href="#" onclick="alert('STILL IN PROGRESS')"'>ACHIEVEMENTS</a></li>
+            <li><a href='Skills.html'>SKILLS</a></li>
+            <li><a href='#fo'>CONTACT DETAILS</a></li>
+        </ul>
+    </nav><br><br><br><br><br>
+    <div class="mid">
+        <div class="midbuttons">
+            <h1 class="hello">CLICK BELOW TO DOWNLOAD RESULTS</h1>
+            <h1 class="sc">SCHOOL RESULTS</h1>
+            <li class="hi"><a href="10th Mark Sheet.pdf" download><button>10th MARK SHEET</button></a><a href="12th Marksheet.pdf" download><button>12th MARK SHEET</button></a></li>
+            <br><br><br>
+            <h1 class="ba">BACHELORS RESULTS</h1>
+            <li class="hi"><a href="1stsembca.pdf" download><button>1st Sem MARK SHEET</button></a><a href="2ndsembca.pdf" download><button>2nd Sem MARK SHEET</button></a></li><br>
+            <br>
+            <li class="hi"><a href="3rdsembca.pdf" download><button>3rd Sem MARK SHEET</button></a><a href="4thsembca.pdf" download><button>4th Sem MARK SHEET</button></a></li><br>
+            <br>
+            <li class="hi"><a href="5thsembca.pdf" download><button>5th Sem MARK SHEET</button></a><a href="6thsembca.pdf" download><button>6th Sem MARK SHEET</button></a></li><br>
+            <br><br><br>
+            <h1 class="ma">MASTERS RESULTS</h1>
+            <li class="hi"><a href="1stsemmca.pdf" download><button>1st Sem MARK SHEET</button></a><button onclick="alert('DATA NOT FOUND')">2nd Sem MARK SHEET</button></li><br>
+            <br>
+            <a class="hi"><button onclick="alert('DATA NOT FOUND')">3rd Sem MARK SHEET</button><button onclick="alert('DATA NOT FOUND')">4th Sem MARK SHEET</button></a><br>
+            </div>
+    </div><br><br><br><br>
+    <footer class="foot" id="fo">
+        <h1 class="cont">CONTACT ME</h1><br>
+        <div class="content1"><h3>EMAIL : abhimannyuchoudhurywork2002@gmail.com</h3><br>
+            <h3>EMAIL 2 : progamerbaban02@gmail.com</h3><br>
+            <h3>Phone No.: 6291459513</h3><br>
+        </div><br><br>
+        <hr>
+        <div class="copyright">
+            <h2>Author: @Abhimannyu</h2>
+            <h2>&copy; 2024 . All rights Reserved</h2>
+        </div>
+    </footer>
+</body>
+</html>
